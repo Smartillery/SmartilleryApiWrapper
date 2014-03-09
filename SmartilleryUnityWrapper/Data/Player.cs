@@ -6,6 +6,7 @@ namespace SmartilleryUnityWrapper
     {
 		public Location CurrentLocation {get;set;}
 		public Location Destination {get;set;}
+		public double Velocity {get;set;}
     }
 }
 

@@ -23,6 +23,14 @@ namespace SmartilleryUnityWrapper
 		void UpdateLocation(Location location);
 
 		/// <summary>
+		/// Launch
+		/// </summary>
+		/// <param name="angle">the angle of firing in degrees, between 0 and 89</param> 
+		/// <param name="bearing">the direction of the launch in degrees, 0 is N, 90 is E</param> 
+		/// <exception cref="ConnectionTimeoutException">Connection to server could not be established</exception>
+		void Launch(double angle, double bearing);
+
+		/// <summary>
 		/// Gets information about the currently logged in player
 		/// </summary>
 		/// <returns>The current player.</returns>
@@ -50,6 +58,7 @@ namespace SmartilleryUnityWrapper
 		/// <param name="since">get all lauches since this time</param>
 		/// <exception cref="ConnectionTimeoutException">Connection to server could not be estabilshed</exception>
 		ICollection<Launch> GetLaunches(DateTime since);
+
     }
 }
 
