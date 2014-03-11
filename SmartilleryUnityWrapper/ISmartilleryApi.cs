@@ -28,7 +28,8 @@ namespace SmartilleryUnityWrapper
 		/// <param name="angle">the angle of firing in degrees, between 0 and 89</param> 
 		/// <param name="bearing">the direction of the launch in degrees, 0 is N, 90 is E</param> 
 		/// <exception cref="ConnectionTimeoutException">Connection to server could not be established</exception>
-		void Launch(double angle, double bearing);
+		/// <returns>>Launch back from server fully populated</returns>
+		Launch Launch(double angle, double bearing);
 
 		/// <summary>
 		/// Gets information about the currently logged in player

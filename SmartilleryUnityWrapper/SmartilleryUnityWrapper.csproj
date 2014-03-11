@@ -39,8 +39,8 @@
     <Compile Include="Data\Player.cs" />
     <Compile Include="Data\Launch.cs" />
     <Compile Include="Data\Location.cs" />
-    <Compile Include="Exception\ConnectionTimeoutException&#x10;.cs" />
     <Compile Include="Exception\UnAuthorizedException.cs" />
+    <Compile Include="Exception\ConnectionTimeoutException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
